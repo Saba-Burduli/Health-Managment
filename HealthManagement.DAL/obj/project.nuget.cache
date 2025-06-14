@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Jx5rTsn/k8g=",
+  "dgSpecHash": "se/YoYA4oIY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.Infrastructure\\HealthManagement.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.DAL\\HealthManagement.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.5\\microsoft.aspnetcore.openapi.9.0.5.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"

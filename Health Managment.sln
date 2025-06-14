@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthManagement.Worker", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthManagement.SERVICE", " HealthManagement.SERVICE\HealthManagement.SERVICE.csproj", "{1EEC1DF0-89C2-43DA-8885-C3E2C64E5419}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthManagement.Infrastructure", "HealthManagement.Infrastructure\HealthManagement.Infrastructure.csproj", "{FC38FA87-7563-43B7-80C3-D090B6FB68B4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthManagement.DAL", "HealthManagement.DAL\HealthManagement.DAL.csproj", "{FC38FA87-7563-43B7-80C3-D090B6FB68B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
