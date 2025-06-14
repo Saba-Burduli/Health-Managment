@@ -24,7 +24,7 @@
 
       HealthManagementSystem.sln
     │
-    ├── HealthManagement.Gateway         # API Gateway (YARP-based or custom)
+    ├── HealthManagement.Gateway         # API Gateway (YARP-based)
     │   ├── Program.cs
     │
     ├── HealthManagement.API             # Core business API
