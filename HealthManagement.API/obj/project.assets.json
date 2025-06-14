@@ -81,11 +81,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\RiderProjects\\Health Managment\\API\\API.csproj",
-      "projectName": "API",
-      "projectPath": "C:\\Users\\User\\RiderProjects\\Health Managment\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.API\\HealthManagement.API.csproj",
+      "projectName": "HealthManagement.API",
+      "projectPath": "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.API\\HealthManagement.API.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\RiderProjects\\Health Managment\\API\\obj\\",
+      "outputPath": "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

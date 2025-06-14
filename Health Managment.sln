@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{53E6E049-3E0E-4195-A74D-F8BFF26018D7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthManagement.API", "HealthManagement.API\HealthManagement.API.csproj", "{53E6E049-3E0E-4195-A74D-F8BFF26018D7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B216B18F-F81E-4190-B618-F0A8E1918E76}"
 	ProjectSection(SolutionItems) = preProject
