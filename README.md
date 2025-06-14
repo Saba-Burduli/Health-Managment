@@ -26,12 +26,10 @@
     │
     ├── HealthManagement.Gateway         # API Gateway (YARP-based or custom)
     │   ├── Program.cs
-    │   └── Startup.cs
     │
     ├── HealthManagement.API             # Core business API
     │   ├── Controllers/
     │   ├── Program.cs
-    │   └── Startup.cs
     │
     ├── HealthManagement.Worker          # Background worker service(s)
     │   ├── Services/
@@ -39,10 +37,9 @@
     │
     ├── HealthManagement.SERVICE         # Shared logic, domain models, interfaces
     │   ├── Interfaces/
-    │   ├── Hashing/
+    │   ├── Hashing/ConsistentHashRing.cs
     │   ├── Services/
     │   ├── DTOs/
-    │   └── ConsistentHashRing.cs
     │
     ├── HealthManagement.DAL             # Data access layer
     │   ├── Repositories/
