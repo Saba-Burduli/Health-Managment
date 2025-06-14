@@ -1,3 +1,5 @@
+<h2>High-Level Architecture</h2>
+                      
                       ┌─────────────────────────────────────┐
                       │          API Gateway (YARP)         │
                       │    - Handles incoming HTTP calls    │
