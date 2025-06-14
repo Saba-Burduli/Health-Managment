@@ -81,11 +81,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\RiderProjects\\Health Managment\\Gateway\\Gateway.csproj",
-      "projectName": "Gateway",
-      "projectPath": "C:\\Users\\User\\RiderProjects\\Health Managment\\Gateway\\Gateway.csproj",
+      "projectUniqueName": "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.Gateway\\HealthManagement.Gateway.csproj",
+      "projectName": "HealthManagement.Gateway",
+      "projectPath": "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.Gateway\\HealthManagement.Gateway.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\RiderProjects\\Health Managment\\Gateway\\obj\\",
+      "outputPath": "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.Gateway\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
