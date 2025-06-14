@@ -20,7 +20,7 @@
                  ┌────────────────────┐     ┌────────────────────┐
                  │      Database      │     │   Message Queue     │ (optional)
                  └────────────────────┘     └────────────────────┘
-
+Solution Structure (Example Layout)
 
           /HealthManagementSystem.sln
     │
