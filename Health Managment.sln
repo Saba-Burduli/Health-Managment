@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B68B3FAA-792
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthManagement.Gateway", "HealthManagement.Gateway\HealthManagement.Gateway.csproj", "{92122E54-4C05-48D2-AFD5-F0698604FDF5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthManagement.Worker", "HealthManagement.Worker\HealthManagement.Worker.csproj", "{08C2B1A1-DAA7-4060-B735-12CB9D413E1A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,9 +27,14 @@ Global
 		{92122E54-4C05-48D2-AFD5-F0698604FDF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92122E54-4C05-48D2-AFD5-F0698604FDF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92122E54-4C05-48D2-AFD5-F0698604FDF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08C2B1A1-DAA7-4060-B735-12CB9D413E1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08C2B1A1-DAA7-4060-B735-12CB9D413E1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08C2B1A1-DAA7-4060-B735-12CB9D413E1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08C2B1A1-DAA7-4060-B735-12CB9D413E1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{53E6E049-3E0E-4195-A74D-F8BFF26018D7} = {B68B3FAA-792C-4C28-BC05-B718603E393A}
 		{92122E54-4C05-48D2-AFD5-F0698604FDF5} = {B68B3FAA-792C-4C28-BC05-B718603E393A}
+		{08C2B1A1-DAA7-4060-B735-12CB9D413E1A} = {B68B3FAA-792C-4C28-BC05-B718603E393A}
 	EndGlobalSection
 EndGlobal
