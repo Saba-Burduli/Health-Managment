@@ -2,10 +2,10 @@
 
 public class HospitalDiagnosisList
 {
-    public string? laboratoryName { get; set; }
-    public string? laboratoryAddress { get; set; }
-    public string? laboratoryPhone { get; set; }
-    public string? laboratoryEmail { get; set; }
+    public string? LaboratoryName { get; set; }
+    public string? LaboratoryAddress { get; set; }
+    public string? LaboratoryPhone { get; set; }
+    public string? LaboratoryEmail { get; set; }
     
     //Relations:
     
