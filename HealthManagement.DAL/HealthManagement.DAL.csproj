@@ -9,10 +9,15 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.5"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.6" />
     </ItemGroup>
 
     <ItemGroup>
       <Folder Include="Repositories\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\HealthManagement.Worker\HealthManagement.Worker.csproj" />
     </ItemGroup>
 
 </Project>

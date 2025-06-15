@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HealthManagement.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e48fc662a7d1a6f1de7fbde3aa337bd86afbe770")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+abe1649a147afaf9689b56cf9c23295efbafb5f7")]
 [assembly: System.Reflection.AssemblyProductAttribute("HealthManagement.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HealthManagement.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
