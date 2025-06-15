@@ -1,6 +1,9 @@
-﻿namespace HealthManagement.SERVICE.Interfaces;
+﻿using HealthManagement.Infrastructure.Entities;
+
+namespace HealthManagement.SERVICE.Interfaces;
 
 public interface IDepartmentService
 {
-    //	Handles : Departments
+    Task<IEnumerable<Departament>> GetAllDepartmentsAsync();
+    Task<Departament> GetDepartmentByIdAsync(int departamentId);
 }

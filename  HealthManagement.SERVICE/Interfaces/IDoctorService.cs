@@ -1,6 +1,9 @@
-﻿namespace HealthManagement.SERVICE.Interfaces;
+﻿using HealthManagement.Infrastructure.Entities;
+
+namespace HealthManagement.SERVICE.Interfaces;
 
 public interface IDoctorService
 {
-    //	Handles : Doctors
+    Task<IEnumerable<Doctor>> GetALlDoctorsAsync();
+    Task<Doctor> GetDoctorByIdAsync(int doctorId);
 }

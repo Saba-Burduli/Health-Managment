@@ -1,6 +1,11 @@
-﻿namespace HealthManagement.SERVICE.Interfaces;
+﻿using HealthManagement.Infrastructure.Entities;
+
+namespace HealthManagement.SERVICE.Interfaces;
 
 public interface IPatientService
 {
-    //	Handles : Patients, admissions, history, follow-ups
+    Task<IEnumerable<Patient>> GetALlPatientsAsync();
+    Task<Patient> GetPatientById(int patientId);
+    Task<Patient> AddPatientAsync(Patient patient); //we can delate <patient>
+    Task<Patient> UpdatePatientAsync(Patient patient); //we can delate <patient>
 }
