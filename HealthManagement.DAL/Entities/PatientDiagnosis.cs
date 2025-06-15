@@ -4,7 +4,7 @@ namespace HealthManagement.Infrastructure.Entities;
 public class PatientDiagnosis
 {
     public int PatientDiagnosisId { get; set; }
-    public DateTime? DateifDiagnosis { get; set; } = DateTime.Now;
+    public DateTime? DateOfDiagnosis { get; set; } = DateTime.Now;
     
     //Relations:
     public int PatientId { get; set; }
