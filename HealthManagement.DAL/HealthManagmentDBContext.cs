@@ -22,8 +22,21 @@ public class HealthManagmentDBContext : DbContext
     {
     }
 
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        base.OnModelCreating(modelBuilder);
-    }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Role>().HasData(
+                new Role
+                {
+                    RoleId = 1,
+                    RoleName = "Doctor",
+                },
+                new Role
+                {
+                    RoleId = 2,
+                    RoleName = "Patient",
+                }
+                );
+        }
 }
