@@ -1,22 +1,42 @@
 ﻿using HealthManagement.Infrastructure.Entities;
+using HealthManagement.Infrastructure.Infrastructures;
+using Microsoft.EntityFrameworkCore;
 
 namespace HealthManagement.Infrastructure.Repositories;
 
 public interface IDoctorRepository
 {
     Task<IEnumerable<Doctor>> GetAllAsync();
-    Task<Doctor> GetByIdAsync(int id);
+    Task<Doctor> GetDoctorByIdAsync(int doctorId);
 }
 
-public class DoctorRepository : IDoctorRepository
+public class DoctorRepository : BaseRepository<Doctor>, IDoctorRepository
 {
-    public Task<IEnumerable<Doctor>> GetAllAsync()
+    private readonly HealthManagmentDBContext _context;
+    public DoctorRepository(HealthManagmentDBContext context) : base(context)
     {
-        throw new NotImplementedException();
+        _context = context;
+    }
+    public async Task<IEnumerable<Doctor>> GetAllAsync()
+    {
+        if (_context == null || _context.Doctors==null)
+        {
+            throw new ArgumentException("Argument cannot be null");
+        }
+        return await _context.Doctors
+            .ToListAsync();
     }
 
-    public Task<Doctor> GetByIdAsync(int id)
+    public async Task<Doctor> GetDoctorByIdAsync(int doctorId)
     {
-        throw new NotImplementedException();
+        if (_context==null||_context.Doctors==null)
+        {
+            throw new ArgumentException("Argument cannot be null");
+        }
+
+        return await _context.Doctors
+            .Where(d => d.DoctorId == doctorId)
+            .FirstOrDefaultAsync();
+
     }
 }
