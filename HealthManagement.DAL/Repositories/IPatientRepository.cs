@@ -1,34 +1,66 @@
 ﻿using HealthManagement.Infrastructure.Entities;
+using HealthManagement.Infrastructure.Infrastructures;
+using Microsoft.EntityFrameworkCore;
 
 namespace HealthManagement.Infrastructure.Repositories;
 
 public interface IPatientRepository
 {
     Task<IEnumerable<Patient>> GetAllAsync();
-    Task<Patient> GetByIdAsync(int patientId);
-    Task AddAsync(Patient patient);
-    Task UpdateAsync(Patient patient);
+    Task<Patient> GetPatientByIdAsync(int patientId);
+    Task AddPatientAsync(Patient patient);
+    Task UpdatePatientAsync(Patient patient);
 }
 
-public class PatientRepository : IPatientRepository
+public class PatientRepository : BaseRepository<Patient> , IPatientRepository 
 {
-    public Task<IEnumerable<Patient>> GetAllAsync()
+    public readonly HealthManagmentDBContext _context;
+
+    public PatientRepository(HealthManagmentDBContext context) : base(context)
     {
-        throw new NotImplementedException();
+        _context = context;
+    }
+    public async Task<IEnumerable<Patient>> GetAllAsync()
+    {
+        if (_context==null||_context.Patients==null)
+        {
+            throw new ArgumentException("Argument cannot be null");
+        }
+
+        return await _context.Patients
+            .ToListAsync();
+    }
+    public Task<Patient> GetPatientByIdAsync(int patientId)
+    {
+        if (_context==null||_context.Patients==null)
+        {
+            throw new ArgumentException("Argument cannot be null");
+        }
+
+        return _context.Patients
+            .Where(p => p.PatientId == patientId)
+            .FirstOrDefaultAsync();
     }
 
-    public Task<Patient> GetByIdAsync(int patientId)
+    public async Task AddPatientAsync(Patient patient)
     {
-        throw new NotImplementedException();
+        if (_context==null||_context.Patients==null)
+        {
+            throw new ArgumentException("Argument cannot be null");
+        }
+
+        await _context.Patients.AddAsync(patient);
+        await _context.SaveChangesAsync();
     }
 
-    public Task AddAsync(Patient patient)
+    public async Task UpdatePatientAsync(Patient patient)
     {
-        throw new NotImplementedException();
-    }
+        if (_context==null||_context.Patients==null)
+        {
+            throw new ArgumentException("Argument cannot be null");
+        }
 
-    public Task UpdateAsync(Patient patient)
-    {
-        throw new NotImplementedException();
+        _context.Patients.Update(patient);
+        await _context.SaveChangesAsync();
     }
 }
