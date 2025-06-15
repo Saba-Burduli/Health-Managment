@@ -22,29 +22,27 @@
                  └────────────────────┘     └────────────────────┘
 <h2>Solution Structure (Example Layout)</h2>
 
-      /HealthManagementSystem.sln
+      HealthManagementSystem.sln
     │
-    ├── /HealthManagement.Gateway             ← API Gateway (YARP-based or custom)
-    │   └── Program.cs / Startup.cs
+    ├── HealthManagement.Gateway         # API Gateway (YARP-based)
+    │   ├── Program.cs
     │
-    ├── /HealthManagement.API                 ← Main API for handling core business logic
+    ├── HealthManagement.API             # Core business API
     │   ├── Controllers/
-    │   ├── DTOs/
-    │   ├── Services/
-    │   └── Program.cs / Startup.cs
+    │   ├── Program.cs
     │
-    ├── /HealthManagement.Worker              ← Background worker services (long-running tasks)
+    ├── HealthManagement.Worker          # Background worker service(s)
     │   ├── Services/
     │   └── Worker.cs (inherits from BackgroundService)
     │
-    ├── /HealthManagement.SERVICE             ← Shared logic, domain models, utilities
+    ├── HealthManagement.SERVICE         # Shared logic, domain models, interfaces
     │   ├── Interfaces/
+    │   ├── Hashing/ConsistentHashRing.cs
     │   ├── Services/
-    │   └── Hashing/
-    │       └── ConsistentHashRing.cs
+    │   ├── DTOs/
     │
-    ├── /HealthManagement.DAL                 ← Data access layer (persistence)
+    ├── HealthManagement.DAL             # Data access layer
     │   ├── Repositories/
-    │   ├── DbContext/
     │   ├── Entities/
-    │   └── Cassandra/ or MSSQL/
+    │   ├── DbContext/
+    │   └── Cassandra/ / MSSQL / etc.
