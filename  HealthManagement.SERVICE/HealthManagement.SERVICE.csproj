@@ -13,10 +13,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="DTOs\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\HealthManagement.DAL\HealthManagement.DAL.csproj" />
       <ProjectReference Include="..\HealthManagement.Gateway\HealthManagement.Gateway.csproj" />
       <ProjectReference Include="..\HealthManagement.Worker\HealthManagement.Worker.csproj" />
