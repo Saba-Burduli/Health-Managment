@@ -7,10 +7,12 @@ namespace HealthManagement.SERVICE.Services;
 public class DepartmentService : IDepartmentService
 {
     private readonly DepartmentRepository _departmentRepository;
+    
     public DepartmentService(DepartmentRepository departmentRepository)
     {
         _departmentRepository = departmentRepository;
     }
+    
     public async Task<IEnumerable<Departament>> GetAllDepartmentsAsync()
     {
         var departament = await _departmentRepository.GetAllDepartmentsAsync();

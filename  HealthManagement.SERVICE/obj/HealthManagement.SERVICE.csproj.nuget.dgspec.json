@@ -1,45 +1,40 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\RiderProjects\\Health Managment\\ HealthManagement.SERVICE\\HealthManagement.SERVICE.csproj": {}
+    "/Users/gstore/RiderProjects/Health-Managment/ HealthManagement.SERVICE/HealthManagement.SERVICE.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\RiderProjects\\Health Managment\\ HealthManagement.SERVICE\\HealthManagement.SERVICE.csproj": {
+    "/Users/gstore/RiderProjects/Health-Managment/ HealthManagement.SERVICE/HealthManagement.SERVICE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\RiderProjects\\Health Managment\\ HealthManagement.SERVICE\\HealthManagement.SERVICE.csproj",
+        "projectUniqueName": "/Users/gstore/RiderProjects/Health-Managment/ HealthManagement.SERVICE/HealthManagement.SERVICE.csproj",
         "projectName": "HealthManagement.SERVICE",
-        "projectPath": "C:\\Users\\User\\RiderProjects\\Health Managment\\ HealthManagement.SERVICE\\HealthManagement.SERVICE.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\RiderProjects\\Health Managment\\ HealthManagement.SERVICE\\obj\\",
+        "projectPath": "/Users/gstore/RiderProjects/Health-Managment/ HealthManagement.SERVICE/HealthManagement.SERVICE.csproj",
+        "packagesPath": "/Users/gstore/.nuget/packages/",
+        "outputPath": "/Users/gstore/RiderProjects/Health-Managment/ HealthManagement.SERVICE/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/gstore/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.DAL\\HealthManagement.DAL.csproj": {
-                "projectPath": "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.DAL\\HealthManagement.DAL.csproj"
+              "/Users/gstore/RiderProjects/Health-Managment/HealthManagement.DAL/HealthManagement.DAL.csproj": {
+                "projectPath": "/Users/gstore/RiderProjects/Health-Managment/HealthManagement.DAL/HealthManagement.DAL.csproj"
               },
-              "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.Gateway\\HealthManagement.Gateway.csproj": {
-                "projectPath": "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.Gateway\\HealthManagement.Gateway.csproj"
+              "/Users/gstore/RiderProjects/Health-Managment/HealthManagement.Gateway/HealthManagement.Gateway.csproj": {
+                "projectPath": "/Users/gstore/RiderProjects/Health-Managment/HealthManagement.Gateway/HealthManagement.Gateway.csproj"
               },
-              "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.Worker\\HealthManagement.Worker.csproj": {
-                "projectPath": "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.Worker\\HealthManagement.Worker.csproj"
+              "/Users/gstore/RiderProjects/Health-Managment/HealthManagement.Worker/HealthManagement.Worker.csproj": {
+                "projectPath": "/Users/gstore/RiderProjects/Health-Managment/HealthManagement.Worker/HealthManagement.Worker.csproj"
               }
             }
           }
@@ -52,9 +47,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -88,40 +83,35 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.DAL\\HealthManagement.DAL.csproj": {
+    "/Users/gstore/RiderProjects/Health-Managment/HealthManagement.DAL/HealthManagement.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.DAL\\HealthManagement.DAL.csproj",
+        "projectUniqueName": "/Users/gstore/RiderProjects/Health-Managment/HealthManagement.DAL/HealthManagement.DAL.csproj",
         "projectName": "HealthManagement.DAL",
-        "projectPath": "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.DAL\\HealthManagement.DAL.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.DAL\\obj\\",
+        "projectPath": "/Users/gstore/RiderProjects/Health-Managment/HealthManagement.DAL/HealthManagement.DAL.csproj",
+        "packagesPath": "/Users/gstore/.nuget/packages/",
+        "outputPath": "/Users/gstore/RiderProjects/Health-Managment/HealthManagement.DAL/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/gstore/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.Worker\\HealthManagement.Worker.csproj": {
-                "projectPath": "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.Worker\\HealthManagement.Worker.csproj"
+              "/Users/gstore/RiderProjects/Health-Managment/HealthManagement.Worker/HealthManagement.Worker.csproj": {
+                "projectPath": "/Users/gstore/RiderProjects/Health-Managment/HealthManagement.Worker/HealthManagement.Worker.csproj"
               }
             }
           }
@@ -134,9 +124,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -170,43 +160,38 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.Gateway\\HealthManagement.Gateway.csproj": {
+    "/Users/gstore/RiderProjects/Health-Managment/HealthManagement.Gateway/HealthManagement.Gateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.Gateway\\HealthManagement.Gateway.csproj",
+        "projectUniqueName": "/Users/gstore/RiderProjects/Health-Managment/HealthManagement.Gateway/HealthManagement.Gateway.csproj",
         "projectName": "HealthManagement.Gateway",
-        "projectPath": "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.Gateway\\HealthManagement.Gateway.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.Gateway\\obj\\",
+        "projectPath": "/Users/gstore/RiderProjects/Health-Managment/HealthManagement.Gateway/HealthManagement.Gateway.csproj",
+        "packagesPath": "/Users/gstore/.nuget/packages/",
+        "outputPath": "/Users/gstore/RiderProjects/Health-Managment/HealthManagement.Gateway/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/gstore/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.DAL\\HealthManagement.DAL.csproj": {
-                "projectPath": "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.DAL\\HealthManagement.DAL.csproj"
+              "/Users/gstore/RiderProjects/Health-Managment/HealthManagement.DAL/HealthManagement.DAL.csproj": {
+                "projectPath": "/Users/gstore/RiderProjects/Health-Managment/HealthManagement.DAL/HealthManagement.DAL.csproj"
               },
-              "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.Worker\\HealthManagement.Worker.csproj": {
-                "projectPath": "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.Worker\\HealthManagement.Worker.csproj"
+              "/Users/gstore/RiderProjects/Health-Managment/HealthManagement.Worker/HealthManagement.Worker.csproj": {
+                "projectPath": "/Users/gstore/RiderProjects/Health-Managment/HealthManagement.Worker/HealthManagement.Worker.csproj"
               }
             }
           }
@@ -219,9 +204,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -251,32 +236,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.Worker\\HealthManagement.Worker.csproj": {
+    "/Users/gstore/RiderProjects/Health-Managment/HealthManagement.Worker/HealthManagement.Worker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.Worker\\HealthManagement.Worker.csproj",
+        "projectUniqueName": "/Users/gstore/RiderProjects/Health-Managment/HealthManagement.Worker/HealthManagement.Worker.csproj",
         "projectName": "HealthManagement.Worker",
-        "projectPath": "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.Worker\\HealthManagement.Worker.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.Worker\\obj\\",
+        "projectPath": "/Users/gstore/RiderProjects/Health-Managment/HealthManagement.Worker/HealthManagement.Worker.csproj",
+        "packagesPath": "/Users/gstore/.nuget/packages/",
+        "outputPath": "/Users/gstore/RiderProjects/Health-Managment/HealthManagement.Worker/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/gstore/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -293,9 +273,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -325,7 +305,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
