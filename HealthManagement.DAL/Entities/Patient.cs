@@ -11,6 +11,10 @@ public class Patient
     public string? Email { get; set; }
     
     //Relations:
+    
+    public int PatientDiagnosisId { get; set; }
+    public virtual ICollection<PatientDiagnosis>? PatientDiagnoses { get; set; }
+    
     public int EmergencyContactId { get; set; }
     public virtual EmergencyContact? EmergencyContact { get; set; }
 

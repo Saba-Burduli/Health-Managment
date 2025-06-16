@@ -36,7 +36,27 @@ public class HealthManagmentDBContext : DbContext
                 {
                     RoleId = 2,
                     RoleName = "Patient",
-                }
-                );
+                });
+
+            modelBuilder.Entity<PatientDiagnosis>().HasData(
+                new PatientDiagnosis
+                {
+                    PatientDiagnosisId = 1,
+                    PatientDiagnosisName = "Covid 19",
+                    DateOfDiagnosis = new DateTime(2025, 3, 25) //this is not right 
+
+                },
+                new PatientDiagnosis
+                {
+                    PatientDiagnosisId = 2,
+                    PatientDiagnosisName = "diabetes",
+                    DateOfDiagnosis = new DateTime(2023, 4, 5)
+                },
+                new PatientDiagnosis
+                {
+                    PatientDiagnosisId = 3,
+                    PatientDiagnosisName = "overweight",
+                    DateOfDiagnosis = new DateTime(2022, 10, 19)
+                });
         }
 }

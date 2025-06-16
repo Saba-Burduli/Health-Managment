@@ -6,6 +6,9 @@ namespace HealthManagement.Infrastructure.Repositories;
 
 public interface IPatientDiagnosisRepository
 {
+    public Task<PatientHistory> GetPatientHistorybyId(int patientHistoryId);
+    public Task<PatientDiagnosis> GetPatientByDiagnosisIdAsync(int patientDiagnosisId);
+    public Task<IEnumerable<PatientDiagnosis>> GetAllPatientsDiagnosis(); //no needed for now
     Task<IEnumerable<PatientDiagnosis>> GetPatientByIdAsync(int patientDiagnosisId);
     Task AddPatientDiagnosisAsync(PatientDiagnosis diagnosis);
 }
@@ -19,9 +22,39 @@ public class PatientDiagnosisRepository : BaseRepository<PatientDiagnosis>, IPat
         _context = context;
     }
     
-    public async Task<IEnumerable<PatientDiagnosis>> GetPatientByIdAsync(int patientDiagnosisId)
+    public async Task<PatientHistory> GetPatientHistorybyId(int patientHistoryId)
+    {
+        if (_context==null||_context.PatientDiagnoses==null||patientHistoryId==null)
+        {
+            throw new ArgumentNullException();
+        }
+        return await _context.pati
+    }
+    
+    public async Task<PatientDiagnosis> GetPatientByDiagnosisIdAsync(int patientDiagnosisId)
+    {
+        if (patientDiagnosisId==null || _context.Users==null || _context.PatientDiagnoses==null)
+        {
+            throw new ArgumentException("Argument Cannot be null");
+        }
+        return await _context.PatientDiagnoses
+            .FirstOrDefaultAsync(p => p.PatientDiagnosisId == patientDiagnosisId);
+    }
+    
+    public async Task<IEnumerable<PatientDiagnosis>> GetAllPatientsDiagnosis()
     {
         if (_context==null||_context.PatientDiagnoses==null)
+        {
+            throw new ArgumentException("Arguments cannot be null");
+        }
+        
+        return await _context.PatientDiagnoses
+            .ToListAsync();
+    }
+
+    public async Task<IEnumerable<PatientDiagnosis>> GetPatientByIdAsync(int patientDiagnosisId)
+    {
+        if (_context==null || _context.PatientDiagnoses==null)
         {
             throw new ArgumentException("Arguments cannot be null");
         }

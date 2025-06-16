@@ -1,23 +1,42 @@
 ﻿using HealthManagement.Infrastructure.Entities;
+using HealthManagement.Infrastructure.Repositories;
 using HealthManagement.SERVICE.Interfaces;
 
 namespace HealthManagement.SERVICE.Services;
 
 public class PatientDiagnosisService : IPatientDiagnosisService
 {
-    public Task<IEnumerable<PatientDiagnosis>> GetAllPatientsDiagnosis()
+    private readonly PatientDiagnosisRepository _patientDiagnosisRepository;
+
+    public PatientDiagnosisService(PatientDiagnosisRepository patientDiagnosisRepository)
     {
-        throw new NotImplementedException();
+        _patientDiagnosisRepository = patientDiagnosisRepository;
+    }
+    public async Task<IEnumerable<PatientDiagnosis>> GetAllPatientsDiagnosis()
+    {
+        var patient = await _patientDiagnosisRepository.GetAllPatientsDiagnosis();
+        if (patient==null||!patient.Any())
+        {
+            throw new NullReferenceException("patient cannot be null");
+        }
+
+        return patient;
     }
 
-    public Task<PatientDiagnosis> GetPatientByDiagnosisIdAsync(int patientDiagnosisId)
+    public async Task<PatientDiagnosis> GetPatientByDiagnosisIdAsync(int patientDiagnosisId)
     {
-        throw new NotImplementedException();
+        var patient = await _patientDiagnosisRepository.GetPatientByDiagnosisIdAsync(patientDiagnosisId);
+        if (patient==null || patientDiagnosisId==null || patientDiagnosisId < 0)
+        {
+            throw new NullReferenceException("patient cannot be null");
+        }
+
+        return patient;
     }
 
-    public Task<PatientHistory> GetPatientHistorybyId(int patientHistoryId)
+    public async Task<PatientHistory> GetPatientHistorybyId(int patientHistoryId)
     {
-        throw new NotImplementedException();
+        var patient = await _patientDiagnosisRepository.Gett
     }
 
     public Task<PatientDiagnosis> AddDiagnosisToPatient(int patientDiagnosisId, int patientId)
