@@ -36,11 +36,37 @@ public class PatientDiagnosisService : IPatientDiagnosisService
 
     public async Task<PatientHistory> GetPatientHistorybyId(int patientHistoryId)
     {
-        var patient = await _patientDiagnosisRepository.Gett
+        if (patientHistoryId <= 0)
+        {
+            throw new ArgumentException("Patient history ID must be greater than 0");
+        }
+
+        var patient = await _patientDiagnosisRepository.GetPatientHistorybyId(patientHistoryId);
+        if (patient == null)
+        {
+            throw new NullReferenceException("Patient history not found");
+        }
+
+        return patient;
     }
 
-    public Task<PatientDiagnosis> AddDiagnosisToPatient(int patientDiagnosisId, int patientId)
+    public async Task<PatientDiagnosis> AddDiagnosisToPatient(int patientDiagnosisId, int patientId)
     {
-        throw new NotImplementedException();
+        if (patientDiagnosisId <= 0 || patientId <= 0)
+        {
+            throw new ArgumentException("IDs must be greater than 0");
+        }
+    
+        var diagnosis = await _patientDiagnosisRepository.GetPatientByDiagnosisIdAsync(patientDiagnosisId);
+        if (diagnosis == null)
+        {
+            throw new NullReferenceException("Diagnosis not found");
+        }
+    
+        diagnosis.PatientId = patientId;
+    
+        await _patientDiagnosisRepository.AddPatientDiagnosisAsync(diagnosis);
+    
+        return diagnosis;
     }
 }

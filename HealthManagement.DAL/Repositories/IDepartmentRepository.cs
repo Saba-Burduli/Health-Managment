@@ -6,7 +6,7 @@ namespace HealthManagement.Infrastructure.Repositories;
 
 public interface IDepartmentRepository
 {
-    Task<IEnumerable<Departament>> GetAllAsync();
+    Task<IEnumerable<Departament>> GetAllDepartmentsAsync();
     Task<Departament> GetDepartamentByIdAsync(int departamentId);
 
 }
@@ -19,7 +19,7 @@ public class DepartmentRepository : BaseRepository<Departament>, IDepartmentRepo
         _context = context;
     }
     
-    public async Task<IEnumerable<Departament>> GetAllAsync()
+    public async Task<IEnumerable<Departament>> GetAllDepartmentsAsync()
     {
         if (_context==null||_context.Departaments==null)
         {

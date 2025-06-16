@@ -42,10 +42,10 @@ public class PatientService : IPatientService
         {
             throw new NullReferenceException("Patient cannot be null");
         }
-
-        var patientModel = new PatientModel()
+        
+        var patientModel = new Patient()
         {
-            PatiendId = patient.PatientId,
+            PatientId = patient.PatientId,
             FirstName = patient.FirstName,
             LastName = patient.LastName,
             DateOfBirth = patient.DateOfBirth,
@@ -53,7 +53,7 @@ public class PatientService : IPatientService
             Phone = patient.Phone,
             Email = patient.Email
         };
-        return await Task.FromResult(patient);
+        return await Task.FromResult(patientModel);
     }
 
     public async Task<Patient> AddPatientAsync(Patient patient)

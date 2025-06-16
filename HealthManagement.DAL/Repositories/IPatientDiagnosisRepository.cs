@@ -24,11 +24,22 @@ public class PatientDiagnosisRepository : BaseRepository<PatientDiagnosis>, IPat
     
     public async Task<PatientHistory> GetPatientHistorybyId(int patientHistoryId)
     {
-        if (_context==null||_context.PatientDiagnoses==null||patientHistoryId==null)
+        if (_context==null||_context.PatientDiagnoses==null||patientHistoryId==0)
         {
             throw new ArgumentNullException();
         }
-        return await _context.pati
+        return await _context.PatientDiagnoses
+            .Where(p => p.PatientHistoryId == patientHistoryId)
+            .Select(p => new PatientHistory 
+            {
+                PatientId = p.PatientId,
+                DoctorId = p.DoctorId,
+                DateOfVisit = p.DateOfDiagnosis ?? DateTime.Now,
+                Doctor = p.Doctor,
+                Patient = p.Patient.FirstOrDefault(),
+                PatientDiagnoses = new List<PatientDiagnosis> { p }
+            })
+            .FirstOrDefaultAsync();
     }
     
     public async Task<PatientDiagnosis> GetPatientByDiagnosisIdAsync(int patientDiagnosisId)

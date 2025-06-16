@@ -6,7 +6,7 @@ namespace HealthManagement.Infrastructure.Repositories;
 
 public interface IDoctorRepository
 {
-    Task<IEnumerable<Doctor>> GetAllAsync();
+    Task<IEnumerable<Doctor>> GetAllDoctorsAsync();
     Task<Doctor> GetDoctorByIdAsync(int doctorId);
 }
 
@@ -17,7 +17,7 @@ public class DoctorRepository : BaseRepository<Doctor>, IDoctorRepository
     {
         _context = context;
     }
-    public async Task<IEnumerable<Doctor>> GetAllAsync()
+    public async Task<IEnumerable<Doctor>> GetAllDoctorsAsync()
     {
         if (_context == null || _context.Doctors==null)
         {

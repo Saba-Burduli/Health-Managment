@@ -11,6 +11,7 @@
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.5"/>
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.6" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.6" />
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
     </ItemGroup>
 
     <ItemGroup>
@@ -24,6 +25,10 @@
       <ProjectReference Include="..\HealthManagement.DAL\HealthManagement.DAL.csproj" />
       <ProjectReference Include="..\HealthManagement.Gateway\HealthManagement.Gateway.csproj" />
       <ProjectReference Include="..\HealthManagement.Worker\HealthManagement.Worker.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Controllers\" />
     </ItemGroup>
 
 </Project>
