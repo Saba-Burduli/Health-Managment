@@ -7,5 +7,6 @@ namespace HealthManagement.API.Controllers
     [ApiController]
     public class DepartamentController : ControllerBase
     {
+        
     }
 }
