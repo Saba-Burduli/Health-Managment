@@ -7,6 +7,8 @@ namespace HealthManagement.API.Controllers
     [ApiController]
     public class DepartamentController : ControllerBase
     {
+        //Task<IEnumerable<Departament>> GetAllDepartmentsAsync();
+        // Task<Departament> GetDepartmentByIdAsync(int departamentId);
         
     }
 }
