@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Zo/urhWd0QY=",
+  "dgSpecHash": "1zhYz8sJTXg=",
   "success": true,
-  "projectFilePath": "/Users/gstore/RiderProjects/Health-Managment/HealthManagement.Worker/HealthManagement.Worker.csproj",
+  "projectFilePath": "C:\\Users\\User\\RiderProjects\\Health Managment\\HealthManagement.Worker\\HealthManagement.Worker.csproj",
   "expectedPackageFiles": [
-    "/Users/gstore/.nuget/packages/microsoft.aspnetcore.openapi/9.0.5/microsoft.aspnetcore.openapi.9.0.5.nupkg.sha512",
-    "/Users/gstore/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.5\\microsoft.aspnetcore.openapi.9.0.5.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
   ],
   "logs": []
 }
